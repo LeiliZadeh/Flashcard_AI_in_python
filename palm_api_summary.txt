@@ -1,0 +1,429 @@
+ **Flashcard:**
+
+**Word:** 1CIS 4517
+
+**Definition:** Data Intensive and Cloud Computing
+
+**Flashcard:**
+
+**Word:** Cloud Computing
+
+**Definition:** Cloud Computing service models and Amazon Cloud
+
+**Flashcard:**
+
+**Word:** Dr. Xubin He
+
+**Definition:** Computer and Information Sciences
+
+**Flashcard:**
+
+**Word:** Temple University
+
+**Definition:** 1CIS 4517
+
+ **Word:** Outline
+
+**Definition:** A summary of the main points of a text or talk.
+
+**Word:** Cloud computing service models
+
+**Definition:** The different ways in which cloud computing services can be provided.
+
+**Word:** Amazon Cloud: AWS
+
+**Definition:** Amazon Web Services (AWS) is a cloud computing platform that provides a variety of services, including computing, storage, networking, and databases.
+
+**Word:** AWS overview
+
+**Definition:** A general overview of AWS, including its features and benefits.
+
+**Word:** Application examples
+
+**Definition:** Examples of how AWS can be used to build applications.
+
+**Word:** Using Amazon EC2 instances
+
+**Definition:** How to use Amazon EC2 instances to create and run virtual machines on AWS.
+
+**Word:** Other cloud platforms
+
+**Definition:** Other cloud computing platforms, such as Google Cloud and Microsoft Azure.
+
+**Word:** Courtesy
+
+
+ **Flashcard 1**
+
+Word: Amdahl's Law
+
+Definition: The fraction of the sequential part of a program limits the maximum performance speedup.
+
+**Flashcard 2**
+
+Word: Long latency to remote memory
+
+Definition: Even a very small percentage of instructions involving remote memory access will have a big impact on the overall performance.
+
+**Flashcard 3**
+
+Word: Granularity
+
+Definition: The size of a unit of work that can be executed in parallel.
+
+ **Flashcard 1**
+
+Word: Load imbalance
+
+Definition: Leads to some idle processors in the system
+
+**Flashcard 2**
+
+Word: Insufficient parallelism
+
+Definition: During that phase
+
+**Flashcard 3**
+
+Word: Unequal size tasks
+
+Definition: Program needs to balance load
+
+**Flashcard 4**
+
+Word: Static load balancing
+
+Definition: Determine workload, divide up evenly, before starting
+
+**Flashcard 5**
+
+Word: Dynamic load balancing
+
+Definition: Workload changes dynamically, need to rebalance dynamically
+
+ **Flashcard 1**
+
+Word: Cloud computing
+
+Definition: Utility computing: our data and applications are hosted somewhere on the Internet (“in the cloud”)
+
+**Flashcard 2**
+
+Word: Cloud infrastructure
+
+Definition: Data centers with 100,000’s servers
+
+ **Flashcard:**
+
+Word: Multi-tenancy
+Definition: Many apps co-existing on the same infrastructure
+
+Word: Elasticity
+Definition: Fast and graceful response to changing resource requirements
+
+Word: Scalability
+Definition: Scaling to growing data and apps
+
+Word: Load and tenant balancing
+Definition: absorbing load spikes, not to overload the hardware
+
+Word: Availability
+Definition: the cloud must be (almost) always on
+
+Word: Security
+Definition: No security breach into the cloud
+
+Word: Metering
+Definition: Monitoring cloud usage for resource provisioning and billing
+
+Word: Simple APIs
+Definition: Simplify deploying and tuning applications in the cloud
+
+ **Flashcard 1**
+
+Word: Computing resources
+
+Definition: The physical hardware that is used to perform computations.
+
+**Flashcard 2**
+
+Word: Clusters of computers
+
+Definition: A group of computers that are connected together and work together as a single unit.
+
+**Flashcard 3**
+
+Word: Virtualization
+
+Definition: The process of creating a virtual version of a physical resource, such as a computer or storage device.
+
+**Flashcard 4**
+
+Word: Large scale storage facilities
+
+Definition: Facilities that store large amounts of data, such as data warehouses and data lakes.
+
+**Flashcard 5**
+
+Word: Network
+
+Definition: A system of interconnected computers that allows for the sharing of data and resources.
+
+**Flashcard 6**
+
+Word: Web services
+
+Definition: A collection of software components that are accessible over the internet.
+
+ **Flashcard 1**
+
+Word: Cloud providers
+
+Definition: Companies that offer hardware and management tools to cloud customers.
+
+**Flashcard 2**
+
+Word: System services
+
+Definition: Services that provide a foundation for other services, such as local OS, persistent storage, and system software like compilers.
+
+**Flashcard 3**
+
+Word: User-level services
+
+Definition: Services that are used directly by end users, such as email.
+
+**Flashcard 4**
+
+Word: Cloud customers
+
+Definition: Companies or individuals that use the services offered by cloud providers.
+
+**Flashcard 5**
+
+Word: Users
+
+Definition: End users who use the services offered by cloud providers.
+
+ **Flashcard 1**
+
+Word: Infrastructure-as-a-Service (IaaS)
+
+Definition: Virtual servers with unique IP addresses and blocks of storage on demand (e.g., Amazon EC2, Google Compute Engine)
+
+**Flashcard 2**
+
+Word: Platform-as-a-Service (PaaS)
+
+Definition: Set of software and development tools (API) hosted on the provider's servers (e.g., Windows Azure, Google AppEngine)
+
+**Flashcard 3**
+
+Word: Software-as-a-Service (SaaS)
+
+Definition: The provider allows the customer only to use its applications (e.g., web-based email, web stores, etc)
+
+ **Flashcard 1**
+
+Word: Cloud Service Models
+
+Definition: 10 Software as a Service (SaaS) Platform as a Service (PaaS) Infrastructure as a Service (IaaS)
+
+**Flashcard 2**
+
+Word: SalesForce CRM
+
+Definition: LotusLive
+
+**Flashcard 3**
+
+Word: Effectively and Securely Using the Cloud Computing Paradigm
+
+Definition: by peter Mell, Tim Grance
+
+ **Word:** Virtualization
+
+**Definition:** An abstraction of an execution environment that can be made dynamically available to authorized clients by using well-defined protocols, resource quota (e.g. CPU, memory share), software configuration (e.g. O/S, provided services).
+
+**Word:** Virtual Machines (VMs)
+
+**Definition:** Abstraction of a physical host machine, Hypervisor intercepts and emulates instructions from VMs, and allows management of VMs, VMWare, Xen, KVM, etc.
+
+**Word:** Infrastructure API
+
+**Definition:** Plug-ins to hardware/support structures
+
+ **Flashcard 1**
+
+Word: Parallel batch processing
+
+Definition: Get fast answers when processing large amounts of data
+
+**Flashcard 2**
+
+Word: Mobile applications & services
+
+Definition: Store large data sets & perform complex computations in the cloud (e.g., scientific analysis, augmented reality)
+
+**Flashcard 3**
+
+Word: Extensions of desktop software
+
+Definition: Matlab, Mathematica, MS office
+
+ **Flashcard 1**
+
+**Word:** Business view
+
+**Definition:** The perspective of a business on a particular issue.
+
+**Flashcard 2**
+
+**Word:** Shift in economic model
+
+**Definition:** A change in the way that an economy works.
+
+**Flashcard 3**
+
+**Word:** Relevance
+
+**Definition:** The importance or significance of something.
+
+**Flashcard 4**
+
+**Word:** Weight
+
+**Definition:** The importance or significance of something.
+
+**Flashcard 5**
+
+**Word:** Technology
+
+**Definition:** The application of scientific knowledge for practical purposes.
+
+**Flashcard 6**
+
+**Word:** Diminishes
+
+**Definition:** Becomes less in size, amount, or importance.
+
+**Flashcard 7**
+
+**Word:** Commodity
+
+**Definition:** A product that is mass-produced
+
+ **Word:** Cloud
+
+**Definition:** A cloud is a metaphor for the Internet, based on the appearance of the networks of interconnected computer systems that are used to deliver Internet services.
+
+**Word:** Player
+
+**Definition:** A person who plays a game or sport.
+
+ **Provider's benefits**
+
+| Word | Definition |
+|---|---|
+| Renting an IT infrastructure to many users | The provider rents out its IT infrastructure to multiple users, which allows them to share resources and reduce costs. |
+| Sharing of resources | The provider's IT infrastructure is shared by multiple users, which allows them to reduce costs and improve efficiency. |
+| Reduction of costs through scale | The provider can reduce costs by spreading the fixed costs of its IT infrastructure across multiple users. |
+| Centralized monitoring and maintenance | The provider can centrally monitor and maintain its IT infrastructure, which reduces the costs and complexity of managing it. |
+| Control over software evolution | The provider can control the evolution of the software that runs on its IT infrastructure, which ensures that it meets the needs of its users. |
+| Control over service level agreements | The provider can control the service level agreements (SLAs) that it offers to its users, which ensures
+
+ **Flashcard 1**
+
+Word: Consumer's benefits
+
+Definition: Reduced capital expenditure for hardware, software, services
+
+**Flashcard 2**
+
+Word: Consumer's benefits
+
+Definition: Reduced operational expenses - Pay as you go (dynamic provisioning)
+
+**Flashcard 3**
+
+Word: Consumer's benefits
+
+Definition: Simple to achieve scalability and flexibility
+
+**Flashcard 4**
+
+Word: Consumer's benefits
+
+Definition: More predictable costs
+
+**Flashcard 5**
+
+Word: Consumer's benefits
+
+Definition: Complete a task in 1 hour using 100 machines vs 100 hours using 1 machine
+
+ **Flashcard:**
+
+Word: Traditional data center
+Definition: A data center that uses physical servers to store and process data.
+
+Word: Under-provisioning
+Definition: The act of providing less resources than are needed.
+
+Word: Lost revenue
+Definition: The money that a company loses when it does not sell enough products or services.
+
+Word: Lost users
+Definition: The people who stop using a company's products or services.
+
+Word: Resources
+Definition: The things that are needed to do something, such as money, time, or materials.
+
+Word: Demand
+Definition: The amount of something that is needed or wanted.
+
+Word: Capacity
+Definition: The maximum amount of something that can be held or produced.
+
+ **Flashcard 1**
+
+Word: 18
+
+Definition: The number of unused resources in a cloud data center.
+
+**Flashcard 2**
+
+Word: Economics of cloud model
+
+Definition: The financial benefits of using a cloud data center.
+
+**Flashcard 3**
+
+Word: Static data center
+
+Definition: A data center that is not located in the cloud.
+
+**Flashcard 4**
+
+Word: Data center in the cloud
+
+Definition: A data center that is located in the cloud.
+
+**Flashcard 5**
+
+Word: Demand
+
+Definition: The amount of resources that are needed at a given time.
+
+**Flashcard 6**
+
+Word: Capacity
+
+Definition: The maximum amount of resources that a data center can provide.
+
+**Flashcard 7**
+
+Word: Time
+
+Definition: The amount of time that a
+

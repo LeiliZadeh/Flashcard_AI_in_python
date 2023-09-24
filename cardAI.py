@@ -2,16 +2,16 @@
 
 import time
 import google.generativeai as palm
-import openai
-#import PyPDF2
+import PyPDF2
 import os
-#from pypdf import PdfReader
+from pypdf import PdfReader
 
 # Configure the PaLM API key
 palm.configure(api_key='AIzaSyCXpiohNJcnIh8D4pv6w-3uVy8Bxo0n048')
 
 # Use the palm.list_models function to find available models:
-models = [m for m in palm.list_models() if 'generateText' in m.supported_generation_methods]
+models = [m for m in palm.list_models(
+) if 'generateText' in m.supported_generation_methods]
 model = models[0].name
 print(model)
 
@@ -51,8 +51,8 @@ completion2 = palm.generate_text(
 print(completion2.result)
 '''
 # Custom Chatbot - Text Summarizer
-directory = '/content/drive/MyDrive/1-Build-a-Chatbot/'
-filename = 'Attention-Is-All-You-Need.pdf'
+directory = '/Users/leili/Desktop/Flashcard_AI_in_python'
+filename = '/Lec2-CloudComputing.pdf'
 
 # Create a pdf file object
 pdfFileObject = open(directory + filename, 'rb')
@@ -71,17 +71,21 @@ for i in range(0, len(pdfReader.pages)):
     text.append(pageObj)
 
 # Merge multiple pages to reduce API Calls
+
+
 def join_elements(lst, chars_per_element):
     new_lst = []
     for i in range(0, len(lst), chars_per_element):
         new_lst.append(''.join(lst[i:i+chars_per_element]))
     return new_lst
 
+
 # Option to keep x elements per list element
 new_text = join_elements(text, 3)
 
 print(f"Original Pages = ", len(text))
 print(f"Compressed Pages = ", len(new_text))
+
 
 def get_completion(prompt):
     completion = palm.generate_text(model=model,
@@ -91,14 +95,18 @@ def get_completion(prompt):
                                     )
     return completion.result
 
+
 summary = ""
 for i in range(len(new_text)):
     prompt = f"""
-  Your task is to act as a Text Summariser.
-  I'll give you text from  pages of a book from beginning to end.
-  And your job is to summarise text from these pages in less than 100 words.
-  Don't be conversational. I need a plain 100 word answer.
-  Text is shared below, delimited with triple backticks:
+  You are a flashcard maker AI, and your task is to find words and their definitions in text. Here's how you should work:
+    Input Text: You will receive a text input from the user that contains sentences with words and their corresponding definitions. The text will be in the format: "Word: Definition."
+    Flashcard Creation: Your primary job is to create flashcards for each word-definition pair you find in the input text.
+    Example Flashcard: For each word-definition pair you find, create a flashcard that looks like this:
+        Word: [Word]
+        Definition: [Definition]
+    Output: Print out the created flashcards for the user to review. Make sure to format them clearly, with each flashcard clearly indicating the word and its definition.
+Remember to be accurate and clear in your flashcard creation, and provide a user-friendly experience for those who want to study and review the content.
   ```{text[i]}```
   """
     try:
@@ -107,9 +115,9 @@ for i in range(len(new_text)):
         response = get_completion(prompt)
     print(response)
     summary = f"{summary} {response}\n\n"
-    time.sleep(19)  # You can query the model only 3 times in a minute for free, so we need to put some delay
+    # You can query the model only 3 times in a minute for free, so we need to put some delay
+    time.sleep(19)
 
 with open(directory + '/palm_api_summary.txt',
           'w') as out:
-    out.write(summary) 
-
+    out.write(summary)
